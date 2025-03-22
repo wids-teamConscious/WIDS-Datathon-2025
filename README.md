@@ -26,6 +26,7 @@
 
 ---
 
+<a id="project-highlights"></a>
 ## **🎯 Project Highlights**
 * Built a Neural Network Model and a Logistic Regression Model to predict individual's sex and ADHD Diagnosis
 * Achieved an F1 score of 0.701and 0.652 respectively
