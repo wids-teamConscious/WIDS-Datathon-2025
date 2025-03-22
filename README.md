@@ -29,7 +29,7 @@
 ## **👩🏽‍💻 Setup & Execution**
 #### 1. Retreive our Code by Cloning this Repository or Downloading the Notebooks
 
-  > To Clone the Repo Run `git clone https://github.com/wids-teamConscious/teamConscious`
+  > To Clone the Repo Run `git clone https://github.com/wids-teamConscious/monorepo`
 
 
 #### 2. Download Datasets Through WiDS Kaggle Competition Page
