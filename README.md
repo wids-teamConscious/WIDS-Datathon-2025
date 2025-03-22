@@ -6,7 +6,7 @@
 | ----- | ----- | ----- |
 | Tiffany Fu | @tiffanyfu7 | Completed model exploration with CNN and LR, Handle Missing Data |
 | Zaina Mushtaq | @zainamushtaq | Led Feature Engineering and Model Evalution |
-| Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model |
+| Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model, Feature Engineering and Missing Data Handling |
 | Alison Sanchez | @AlThe5th | Built and Optimized Logistic Regression Model |
 
 *NOTE: feel free to edit your contributions here!!!*
@@ -72,6 +72,19 @@
 
 **Describe (as applicable):**
 
+**Neural Network Model**
+
+We decided to go for a Neural Network model because it excels at analyzing complex, non-linear data. We realized traditional models, such as RandomForest, failed to learn the trend and pattern. This model helped us achieve the 0.77918 score on the Kaggle Leaderboard.
+
+Below are the features, hyperparameters, and set up we have for the model:
+
+* Used leakyReLU to avoid dead neurons
+* Used Dropout to prevent overfitting, BatchNormalization to improve training stability
+* Used EarlyStopping to prevent overfitting and improve model efficiency
+* Implemented train_test_spilit with 30% test size, accuracy as evaluation metric, and binary_crossentropy for loss
+
+  
+
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
@@ -86,6 +99,7 @@
 * How your model performed overall
 * How your model performed across different skin tones (AJL)
 * Insights from evaluating model fairness (AJL)
+
 
 **Potential visualizations to include:**
 
