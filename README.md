@@ -9,13 +9,27 @@
 | Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model |
 | Alison Sanchez | @AlThe5th | Built and Optimized Logistic Regression Model |
 
-## TODO: Add Table of Contents
+---
+
+## **📋 Table of Contents** 
+1. [**🎯 Project Highlights**](#heading-title)
+2. [**👩🏽‍💻 Setup & Execution**](#heading-title)
+3. [**🏗️ Project Overview**](#heading-title)
+4. [**📊 Data Exploration**](#heading-title)
+5. [**🧠 Model Development**](#heading-title)
+6. [**🖼️ Impact Narrative**](#heading-title)
+7. [**🚀 Next Steps & Future Improvements](#heading-title)
+8. [**📄 References & Additional Resources**](#heading-title)
+
+---
 
 ## **🎯 Project Highlights**
 * Built a Neural Network Model and a Logistic Regression Model to predict individual's sex and ADHD Diagnosis
 * Achieved an F1 score of 0.701and 0.652 respectively
 * Placed 19 out of 539 Teams (Top 0.03%)
 * Implemented Filling Missing Values and Standard Scaler to optimize results within compute constraints
+
+---
 
 ## **👩🏽‍💻 Setup & Execution**
 #### 1. Retrieve our Code by Cloning this Repository or Downloading the Notebooks
@@ -28,10 +42,10 @@
 
 #### 3. Replace File Paths to Data
 ```
-categorical_path = ‘`INSERT PATH`’
-functiontional_path = ‘`INSERT PATH`’
-quantative_path = ‘`INSERT PATH`’
-target_path = ‘`INSERT PATH`’
+categorical_path = ‘<INSERT PATH>’
+functiontional_path = ‘<INSERT PATH>’
+quantative_path = ‘<INSERT PATH>’
+target_path = ‘<INSERT PATH>’
 
 df_categorical = pd.read_excel(categorical_path)
 df_functional = pd.read_csv(function_path')
@@ -42,6 +56,8 @@ df_target = pd.read_excel(target_path)
 
 #### 5. Retrieve Test Predictions 
 > Results stored in `neuralNetworkPredictions.csv` and `logisticRegressionPredictions.csv`
+
+---
 
 ## **🏗️ Project Overview**
 The **WiDS Datathon Global Challenge** was developed in collaboration with the [Ann S. Bowers Women’s Brain Health Initiative](https://wbhi.ucsb.edu/) (WBHI), Cornell University, and UC Santa Barbara. The datasets and support for this challenge were provided by the Healthy Brain Network (HBN), the signature scientific initiative of the Child Mind Institute, and the Reproducible Brain Charts project (RBC).  
@@ -55,6 +71,10 @@ Our project focused on predicting an individual's sex and ADHD diagnosis using A
 Undiagnosed ADHD in girls can lead to long-term challenges, including struggles with academic performance, self-esteem, mental health, and daily functioning. By leveraging machine learning, we aimed to improve ADHD detection in females, reducing the likelihood of missed diagnoses and enabling earlier intervention. This work has the potential to contribute to more equitable and personalized mental health care, ensuring that individuals receive the support they need based on their unique neurobiological profiles.  
 
 🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
+
+
+---
+
 
 ## **📊 Data Exploration**
 #### Datasets used
@@ -74,6 +94,10 @@ For categorical variables, missing values were replaced with the mode of the col
 
 #### Challenges and Assumptions
 The biggest initial challenge we had was actually the data preparation and preprocessing itself. When first exploring the data, we could not understand what to actually do to the data before modeling. Since parent 2’s education and occupation each had 200+ missing values, we dropped those columns completely and assumed it will not affect the modeling too much. 
+
+
+---
+
 
 ## **🧠 Model Development**
 
@@ -102,33 +126,63 @@ Below are the features, hyperparameters, and set up we have for the model:
 * Used EarlyStopping to prevent overfitting and improve model efficiency
 * Implemented train_test_spilit with 30% test size, accuracy as evaluation metric, and binary_crossentropy for loss
 
+
+---
+
+
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
+|                     | Kaggle Leaderboard Score | ADHD Model F-1 Score | Sex Model F-1 Score |
+|---------------------|--------------------------|----------------------|---------------------|
+| Logistic Regression | 0.74620                  | 0.818                | 0.626               |
+| Neural Network      | 0.77918                  | 0.821                | 0.55                |
 
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
-* How your model performed overall
 
-**Potential visualizations to include:**
+---
 
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ## **🖼️ Impact Narrative**
 
-**WiDS challenge:**
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-LR factors…
-2. How could your work help contribute to ADHD research and/or clinical care?
+The top ten features of our Logistic Regression Model for predicting Sex Output point to the biggest predictors between male and female participants
+
+| Top Feature                | Coefficient |
+|----------------------------|-------------|
+| 52throw_53thcolumn         | 0.448153    |
+| 50throw_53thcolumn         | 0.443506    |
+| 121throw_147thcolumn       | 0.432214    |
+| 164throw_189thcolumn       | 0.429034    |
+| 114throw_121thcolumn       | 0.427718    |
+| 53throw_55thcolumn         | 0.423922    |
+| 101throw_131thcolumn       | 0.422798    |
+| 160throw_190thcolumn       | 0.411727    |
+| MRI_Track_Scan_Location_4  | 0.407417    |
+| Barratt_Barratt_P1_Edu_9   | 0.404300    |
+
+These results highlight the difference in brain patterns particularly in the diagonal which could be further supported by ADHD research
+
+
+---
+
 
 ## **🚀 Next Steps & Future Improvements**
 
-**Address the following:**
-* What are some of the limitations of your model?
-Add more explainability tools for Neural Networks 
-* What would you do differently with more time/resources?
-Better organization of shared files
-* What additional datasets or techniques would you explore?
-Ensemble techniques with different models
+#### Limitations of Our Model
+One key limitation of our neural network is **explainability**—a common challenge with deep learning models. Neural networks function as black boxes, making it difficult to interpret how specific predictions are made. This lack of transparency can limit trust and adoption in medical and clinical settings. In future iterations, we plan to integrate explainability tools such as **SHAP (SHapley Additive Explanations)** and **LIME (Local Interpretable Model-agnostic Explanations)** to provide better insights into feature importance and model decision-making.  
+
+#### Improvements with More Time and Resources
+With additional time and resources, we would focus on:  
+* Enhancing workflow efficiency: Implementing a more structured organization for shared files and datasets to improve team collaboration and reproducibility. 
+* Bias and fairness analysis: Conducting deeper evaluations to ensure our model does not reinforce existing biases in ADHD diagnosis across different demographics.  
+
+#### Future Exploration 
+In future projects, we would like to explore:  
+* Ensemble learning techniques: Combining multiple models (e.g., Random Forest, Gradient Boosting, and Neural Networks) to improve predictive performance and robustness.  
+* Multi-modal data integration: Incorporating additional datasets, such as **genetic data, neuroimaging scans, and behavioral assessments**, to provide a more comprehensive understanding of ADHD diagnosis.  
+* Transfer learning: Leveraging pre-trained models in medical AI to enhance performance without requiring an extensive labeled dataset.  
+
+
+---
+
 
 ## **📄 References & Additional Resources**
 [Sex-Specific Differences in the Healthy and Disordered Brain | WiDS Worldwide](https://www.youtube.com/watch?v=KO7YI7j_d-A)
