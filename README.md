@@ -70,6 +70,20 @@
 
 ## **🧠 Model Development**
 
+**Logistic Regression Model**
+
+We started with a logistic regression model as a baseline for overall model development. We also messed around with wrapper functions to try and improve performance, however none could predict better than the base logistic model with optimized parameters.
+
+Below is the setup for this model:
+
+* Tailored model for both labels
+* Performed GridSearch to find optimal LR parameters for each label
+* 70/30 train/test split
+* Used StandardScaler on X_train and X_test
+* Using primarily F1-Score and accuracy evaluation metrics.
+* ADHD: 77-82% accuracy, 80-85% F1
+* Sex: 66-73% accuracy, <54% F1
+  
 
 **Neural Network Model**
 
