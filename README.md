@@ -15,13 +15,13 @@
 
 ## **📋 Table of Contents**  
 1. [**🎯 Project Highlights**](#project-highlights)  
-2. [**👩🏽‍💻 Setup & Execution**](#setup--execution)  
+2. [**👩🏽‍💻 Setup & Execution**](#setup-execution)  
 3. [**🏗️ Project Overview**](#project-overview)  
 4. [**📊 Data Exploration**](#data-exploration)  
 5. [**🧠 Model Development**](#model-development)  
 6. [**🖼️ Impact Narrative**](#impact-narrative)  
-7. [**🚀 Next Steps & Future Improvements**](#next-steps--future-improvements)  
-8. [**📄 References & Additional Resources**](#references--additional-resources)  
+7. [**🚀 Next Steps & Future Improvements**](#next-steps-future-improvements)  
+8. [**📄 References & Additional Resources**](#references-additional-resources)  
 
 
 ---
