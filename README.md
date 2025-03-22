@@ -35,6 +35,7 @@
 
 ---
 
+<a id="setup-execution"></a>  
 ## **👩🏽‍💻 Setup & Execution**
 #### 1. Retrieve our Code by Cloning this Repository or Downloading the Notebooks
 
@@ -63,6 +64,7 @@ df_target = pd.read_excel(target_path)
 
 ---
 
+<a id="project-overview"></a> 
 ## **🏗️ Project Overview**
 The **WiDS Datathon Global Challenge** was developed in collaboration with the [Ann S. Bowers Women’s Brain Health Initiative](https://wbhi.ucsb.edu/) (WBHI), Cornell University, and UC Santa Barbara. The datasets and support for this challenge were provided by the Healthy Brain Network (HBN), the signature scientific initiative of the Child Mind Institute, and the Reproducible Brain Charts project (RBC).  
 
@@ -79,7 +81,7 @@ Undiagnosed ADHD in girls can lead to long-term challenges, including struggles 
 
 ---
 
-
+<a id="data-exploration"></a>  
 ## **📊 Data Exploration**
 #### Datasets used
 Data provided in Kaggle as mentioned in Setup
@@ -102,7 +104,7 @@ The biggest initial challenge we had was actually the data preparation and prepr
 
 ---
 
-
+<a id="model-development"></a> 
 ## **🧠 Model Development**
 
 #### Logistic Regression Model
@@ -144,7 +146,7 @@ Below are the features, hyperparameters, and set up we have for the model:
 
 ---
 
-
+<a id="impact-narrative"></a>  
 ## **🖼️ Impact Narrative**
 
 The top ten features of our Logistic Regression Model for predicting Sex Output point to the biggest predictors between male and female participants
@@ -167,7 +169,7 @@ These results highlight the difference in brain patterns particularly in the dia
 
 ---
 
-
+<a id="next-steps-future-improvements"></a>  
 ## **🚀 Next Steps & Future Improvements**
 
 #### Limitations of Our Model
@@ -187,7 +189,7 @@ In future projects, we would like to explore:
 
 ---
 
-
+<a id="references-additional-resources"></a>  
 ## **📄 References & Additional Resources**
 [Sex-Specific Differences in the Healthy and Disordered Brain | WiDS Worldwide](https://www.youtube.com/watch?v=KO7YI7j_d-A)
 
