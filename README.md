@@ -70,7 +70,6 @@
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
 
 **Neural Network Model**
 
@@ -83,11 +82,6 @@ Below are the features, hyperparameters, and set up we have for the model:
 * Used EarlyStopping to prevent overfitting and improve model efficiency
 * Implemented train_test_spilit with 30% test size, accuracy as evaluation metric, and binary_crossentropy for loss
 
-  
-
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 
 ---
 
