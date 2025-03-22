@@ -9,17 +9,20 @@
 | Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model |
 | Alison Sanchez | @AlThe5th | Built and Optimized Logistic Regression Model |
 
+
 ---
 
-## **📋 Table of Contents** 
-1. [**🎯 Project Highlights**](#heading-title)
-2. [**👩🏽‍💻 Setup & Execution**](#heading-title)
-3. [**🏗️ Project Overview**](#heading-title)
-4. [**📊 Data Exploration**](#heading-title)
-5. [**🧠 Model Development**](#heading-title)
-6. [**🖼️ Impact Narrative**](#heading-title)
-7. [**🚀 Next Steps & Future Improvements](#heading-title)
-8. [**📄 References & Additional Resources**](#heading-title)
+
+## **📋 Table of Contents**  
+1. [**🎯 Project Highlights**](#project-highlights)  
+2. [**👩🏽‍💻 Setup & Execution**](#setup--execution)  
+3. [**🏗️ Project Overview**](#project-overview)  
+4. [**📊 Data Exploration**](#data-exploration)  
+5. [**🧠 Model Development**](#model-development)  
+6. [**🖼️ Impact Narrative**](#impact-narrative)  
+7. [**🚀 Next Steps & Future Improvements**](#next-steps--future-improvements)  
+8. [**📄 References & Additional Resources**](#references--additional-resources)  
+
 
 ---
 
