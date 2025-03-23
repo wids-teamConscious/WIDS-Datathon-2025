@@ -6,7 +6,7 @@
 | ----- | ----- | ----- |
 | Tiffany Fu | @tiffanyfu7 | Completed model exploration with CNN and LR, Handle Missing Data |
 | Zaina Mushtaq | @zainamushtaq | Led Feature Engineering and Model Evaluation |
-| Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model |
+| Xinyue Su | @Xinyue519 | Built and Optimized Neural Network Model, Handled Feature Engineering|
 | Alison Sanchez | @AlThe5th | Built and Optimized Logistic Regression Model |
 
 
@@ -128,9 +128,12 @@ We decided to go for a Neural Network model because it excels at analyzing compl
 Below are the features, hyperparameters, and set up we have for the model:
 
 * Used leakyReLU to avoid dead neurons
+* Used StandardScaler on X_train and X_test
+* 70/30 train/test split
 * Used Dropout to prevent overfitting, BatchNormalization to improve training stability
 * Used EarlyStopping to prevent overfitting and improve model efficiency
-* Implemented train_test_spilit with 30% test size, accuracy as evaluation metric, and binary_crossentropy for loss
+* Implemented Accuracy as evaluation metric, and binary_crossentropy for loss during model fitting
+* Evaluted the model using F1 score
 
 
 ---
